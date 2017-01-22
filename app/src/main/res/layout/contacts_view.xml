@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#373130"
+    android:weightSum="10"
+    >
+
+    <ImageView
+        android:layout_weight="2"
+        android:layout_centerInParent="true"
+        android:id="@+id/icon"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+
+
+        />
+
+    <RelativeLayout android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="7"
+        >
+
+        <TextView
+            android:id="@+id/item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium Text"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="2dp"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="5dp"
+            android:textSize="15dp"
+            android:text="03234551564"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+
+            android:id="@+id/number"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="2dp"
+            android:id="@+id/msg"
+            android:text="msseage ash jhgs iu gsiu iuahs i uigasi  iuag lua alugaliu "
+            android:textColor="#ffffff"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="6m ago"
+        android:textSize="10dp"
+        android:textColor="#ffffff"
+
+
+        />
+
+</LinearLayout>

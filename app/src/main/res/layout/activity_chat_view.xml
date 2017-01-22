@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.devillusions.chatbuzz.ChatViewActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#201f1e"
+            android:orientation="horizontal"
+
+            >
+            <ImageView
+                android:layout_weight="2"
+                android:layout_centerInParent="true"
+                android:id="@+id/chatview_icon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@drawable/pic1"
+
+
+                />
+
+            <RelativeLayout android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="7"
+                >
+
+                <TextView
+                    android:id="@+id/chatview_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unknown"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="2dp"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentTop="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:paddingTop="3dp"
+                    android:textSize="10dp"
+                    android:text="03234551564"
+                    android:textColor="#ffffff"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+
+                    android:id="@+id/chatview_number"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+
+                    android:padding="2dp"
+                    android:id="@+id/chatview_last"
+                    android:text="6m ago"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_chat_view" />
+
+
+</android.support.design.widget.CoordinatorLayout>
